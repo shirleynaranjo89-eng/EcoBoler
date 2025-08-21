@@ -1,0 +1,125 @@
+h1 {
+    font-family: "Bitcount", system-ui;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0,
+        "CRSV" 0.5,
+        "ELSH" 0,
+        "ELXP" 0;
+}
+
+nav {
+    background-color: rgba(134, 15, 15, 0);
+     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: top 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.nav-item a {
+    color: white;
+}
+.barra-oculta {
+    top: -95%; 
+  }
+.hero-img {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: #000000;
+}
+
+.bg-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 150vh;
+
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    filter: brightness(0.6);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0 1rem;
+    color: aliceblue;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #6df34c;
+}
+
+.section {
+    padding: 80px 0;
+}
+
+.productos {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('imagenes/white-tote-canvas-fabric-eco-bag-cloth-shopping-sack-on-green-leaf-nature-background-free-photo.jpg') no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #333;
+}
+
+.galeria {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+.galeria img {
+    width: 280px;
+    transition: opacity 0.5s ease, transform 0.3s ease;
+    cursor: pointer;
+}
+
+.galeria img:hover {
+    transform: scale(1.1);
+}
+
+.flecha {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    user-select: none;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 50%;
+    transition: background 0.3s ease;
+}
+
+.flecha:hover {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.texto {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.subtexto {
+    font-size: 2rem;
+    color: gray;
+}
+
